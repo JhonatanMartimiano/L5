@@ -1,0 +1,26 @@
+*****************************
+** INSTRUÇÕES E INSTALAÇÃO **
+*****************************
+XAMPP ou algo semelhante.
+1 - Extrair projeto para dentro de sua pasta de projetos.
+2 - Inicar os serviços do XAMPP.
+3 - Executar o arquivo SQL (databasedefault) onde encontra toda estrutura e dados dos ramais.
+4 - Caso o seu acesso for diferente de (http://localhost), será preciso alterar URL no arquivo (monitoring.js), que seria o "PATH" para o arquivo (Branch.Ajax.php).
+
+DOCKER
+1 - Extrair projeto para dentro de sua pasta de projetos.
+2 - Rodar o comando no terminal (docker-compose up) para que inicie a BUILD do projeto, imagens, comandos, etc.
+3 - Após finalizar toda operação, dar CTRL + C no terminal, e rodar o comando (docker-compose start). Assim você irá ver se está rodando tudo certo os containers.
+4 - Com os containers já rodando, abra seu gerenciador de banco de dados preferido, e utilize esses dados para acesso: (HOST: "localhost", USER: "root", PASSWORD: ""), o PASSWORD é em branco/vazio. Após fazer o acesso, basta executar o arquivo SQL (databasedefault) onde encontra toda estrutura e dados dos ramais. 
+
+Após esses passos é só acessar o projeto via URL.
+
+***************
+** MELHORIAS **
+***************
+
+1 - Organização das pastas.
+2 - Melhorando layout separando os canais, hoje tem 5, mas poderia ter mais e ficaria difícil a visualização.
+3 - Responsividade
+4 - Não só o arquivo ramais.php foi transformado em uma classe, mas também os demais, para obter melhor um exemplo básico de OO, Models, etc.
+5 - Axios Async/Await
